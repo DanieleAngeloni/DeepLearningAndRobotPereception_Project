@@ -39,7 +39,7 @@ Characteristics:
 
 Dataset split:
 
-
+```
 dataset/
 ├── rgb/
 │ ├── train
@@ -49,7 +49,7 @@ dataset/
 ├── train
 ├── val
 └── test
-
+```
 
 ---
 
