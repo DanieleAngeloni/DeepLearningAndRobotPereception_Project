@@ -42,13 +42,13 @@ Dataset split:
 ```
 dataset/
 ├── rgb/
-│ ├── train
-│ ├── val
-│ └── test
+│   ├── train/
+│   ├── val/
+│   └── test/
 └── depth/
-├── train
-├── val
-└── test
+    ├── train/
+    ├── val/
+    └── test/
 ```
 
 ---
@@ -57,23 +57,23 @@ dataset/
 
 Pipeline:
 
-
+```
 RGB Image
-↓
+    ↓
 ResNet50 Encoder
-↓
+    ↓
 Multi-scale Features
-↓
+    ↓
 Decoder with Upsampling
-↓
+    ↓
 Predicted Depth Map
-
+```
 
 Key techniques:
 
-- transfer learning
-- skip connections
-- bilinear upsampling
+- Transfer learning
+- Skip connections
+- Bilinear upsampling
 
 ---
 
@@ -84,9 +84,9 @@ Training optimizes a combination of:
 - 📏 **MSE (Mean Squared Error)**
 - 🧠 **SSIM (Structural Similarity Index)**
 
-
+```
 Loss = MSE + SSIM
-
+```
 
 This improves both **numerical accuracy** and **perceptual quality** of the predicted depth maps.
 
@@ -95,9 +95,9 @@ This improves both **numerical accuracy** and **perceptual quality** of the pred
 ## 📊 Results
 
 | Metric | Value |
-|------|------|
-| RMSE | **2.05** |
-| SSIM | **0.68** |
+|--------|-------|
+| RMSE   | **2.05** |
+| SSIM   | **0.68** |
 
 The model produces **consistent and structurally accurate depth predictions**.
 
@@ -105,13 +105,14 @@ The model produces **consistent and structurally accurate depth predictions**.
 
 ## 📁 Repository Structure
 
+```
 project/
-├── model.py # neural network architecture
-├── solver.py # training, validation and testing
-├── dataset.py # dataset loader
-├── utils.py # metrics and visualization
-├── main.py # experiment execution
+├── model.py      # neural network architecture
+├── solver.py     # training, validation and testing
+├── dataset.py    # dataset loader
+├── utils.py      # metrics and visualization
+├── main.py       # experiment execution
 └── README.md
-
+```
 
 ---
