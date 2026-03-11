@@ -15,10 +15,8 @@ def main():
     parser.add_argument("--evaluate_every", type=int, default=2)
     parser.add_argument("--visualize_every", type=int, default=50)
     parser.add_argument("--data_dir", type=str,
-                         default="C:\\Users\\ "Insert your path" \\DepthEstimationUnreal")
+                         default="C:\\Users\\ "Insert your path" \\CHALLENGE\\DepthEstimationUnreal")
 
-    #parser.add_argument("--data_dir", type=str,
-                       # default=os.path.join("C:\\", "Users", "Utente", "DATASET", "DepthEstimationUnreal"))
 
     parser.add_argument("--is_train", type=bool, default=True)   # metti a False per Test
 
