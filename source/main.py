@@ -15,8 +15,7 @@ def main():
     parser.add_argument("--evaluate_every", type=int, default=2)
     parser.add_argument("--visualize_every", type=int, default=50)
     parser.add_argument("--data_dir", type=str,
-                         default="C:\\Users\\angel\\PycharmProjects\\pythonProjectDeep\\ProgettoDeepLearning"
-                                 "\\CHALLENGE\\DepthEstimationUnreal")
+                         default="C:\\Users\\ "Insert your path" \\DepthEstimationUnreal")
 
     #parser.add_argument("--data_dir", type=str,
                        # default=os.path.join("C:\\", "Users", "Utente", "DATASET", "DepthEstimationUnreal"))
